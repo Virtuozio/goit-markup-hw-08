@@ -1,0 +1,51 @@
+.modal-submit-btn,
+.subscribe-submit-btn,
+.hat-btn {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: var(--bold-font-weight);
+  font-size: var(--second-font-size);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  border: var(--accent-color);
+  min-width: 216px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--third-background-color);
+  font-family: inherit;
+  font-weight: var(--semibold-font-weight);
+  font-size: var(--second-font-size);
+  line-height: 1.62;
+  letter-spacing: inherit;
+  color: inherit;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background: var(--accent-color);
+    color: var(--main-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}

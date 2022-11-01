@@ -1,0 +1,120 @@
+.footer {
+  background-color: var(--second-background-color);
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: var(--bold-font-weight);
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-address {
+  font-style: normal;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-maps {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer-mail,
+.footer-tel {
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.links-container {
+  display: flex;
+  margin-left: 0;
+}
+.email-input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--second-background-color);
+  padding-left: 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: var(--second-font-size);
+  line-height: 1.25;
+  color: var(--main-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    outline: transparent;
+    border: 1px solid var(--main-color);
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: var(--second-font-size);
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-text,
+.links-text {
+  font-weight: var(--bold-font-weight);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.soc-links {
+  margin-left: 70px;
+}
+.footer-soc-links {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}
+
+.footer-soc-links-svg {
+  fill: #ffffff;
+}
+.subscribe {
+  margin-left: auto;
+}
+.subscribe-submit-items {
+  display: flex;
+  gap: 12px;
+}
+.subscribe-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.send-icon {
+  margin-left: 10px;
+}
