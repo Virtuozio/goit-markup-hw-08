@@ -52,6 +52,79 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn" data-menu-close>X</button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./index.html">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="list">
+              <li class="contacts__item">
+                <a class="mob-connect__tel link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              </li>
+              <li class="contacts__item">
+                <a class="mob-connect__email link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc list">
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <div class="line"></div>
@@ -147,6 +220,7 @@
               </form>
             </div>
           </div>
+          -->
         </div>
       </section>
       <section class="features section">
@@ -430,7 +504,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-contacts">
           <a class="footer-logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
           <address class="footer-address">
             <ul class="footer-list list">
@@ -510,5 +584,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

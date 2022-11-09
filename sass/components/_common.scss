@@ -7,14 +7,28 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  @include mobile {
+    width: 448px;
+  }
+
+  @include tablet {
+    width: 738px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }
 .link {
   text-decoration: none;

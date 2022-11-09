@@ -1,17 +1,29 @@
 .clients__title {
   font-weight: var(--bold-font-weight);
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+  @include desktop {
+    font-size: 36px;
+  }
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
+
 .clients__item {
   width: 170px;
   height: 92px;
+  @include calc(2);
+  @media screen and (min-width: 768px) {
+    @include calc(3);
+  }
+  @media screen and (min-width: 1200px) {
+    @include calc(6);
+  }
 }
 
 .clients__link {

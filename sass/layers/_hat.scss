@@ -1,24 +1,42 @@
 .hat {
   background-color: var(--second-background-color);
-  padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg-img.jpg);
+  padding: 118px 0;
+  background-image: var(--bg-gradient), url(../images/mob-bg-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  flex-grow: 1;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
+  @include retina {
+    background-image: var(--bg-gradient), url(../images/mob-bg-img-2x.jpg);
+  }
+  @include tablet {
+    padding: 118px 0;
+    background-image: var(--bg-gradient), url(../images/tablet-bg-img.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../images/tablet-bg-img-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding: 200px 0;
+    height: 600px;
+    background-image: var(--bg-gradient), url(../images/bg-img.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../images/bg-img-2x.jpg);
+    }
+  }
 }
 
 .hat-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-color);
-  width: 696px;
+  width: 360px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
