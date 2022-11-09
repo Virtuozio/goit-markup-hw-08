@@ -10,6 +10,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-close-btn {
   width: 30px;
@@ -83,6 +87,10 @@
 .modal-link {
   color: var(--accent-color);
   margin-left: 5px;
+  font-size: 12px;
+  @include desktop {
+    font-size: 14px;
+  }
 }
 .modal-comment-label {
   margin-bottom: 20px;
@@ -112,7 +120,11 @@
 .check-text {
   display: flex;
   align-items: center;
+  font-size: 12px;
   color: var(--second-color);
+  @include desktop {
+    font-size: 14px;
+  }
 }
 .check-text span {
   width: 16px;

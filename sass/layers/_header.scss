@@ -20,11 +20,25 @@
   margin-right: 93px;
 }
 .contacts {
-  margin-left: auto;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 .menu {
   display: none;
   gap: 50px;
+  @include tablet {
+    display: flex;
+  }
 }
 .menu__link {
   font-weight: var(--semibold-font-weight);
@@ -36,22 +50,6 @@
   &:focus,
   &:hover {
     color: var(--accent-color);
-  }
-}
-.--current {
-  color: var(--accent-color);
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background: var(--accent-color);
-    border-radius: 2px;
-    margin: -2px;
-    transition: transform 500ms;
   }
 }
 
@@ -86,6 +84,9 @@
 }
 .menu-open-btn {
   margin-left: auto;
+  @include tablet {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -97,6 +98,7 @@
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  animation: fadeInRight 1s ease-in-out;
   > .container {
     height: 100%;
     display: flex;
@@ -105,13 +107,26 @@
     overflow: auto;
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Staatliches&display=swap");
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 .menu-close-btn {
   margin-left: auto;
   background-color: transparent;
   border: none;
   display: block;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
-
 .mob-menu__item:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -121,8 +136,8 @@
 }
 .mob-menu__link {
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.1em;
 
   color: #303030;
@@ -131,32 +146,51 @@
 .mob-connect {
   margin-bottom: 64px;
 }
+.mob-contacts__item {
+  margin-bottom: 32px;
+}
 .mob-connect__tel {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #303030;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
 }
 .mob-connect__email {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
 
-  color: #303030;
+  color: #757575;
+}
+.--current {
+  color: var(--accent-color);
+  position: relative;
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background: var(--accent-color);
+      border-radius: 2px;
+      margin: -2px;
+      transition: transform 500ms;
+    }
+  }
 }
 .mob-soc {
   position: relative;
-  padding-left: 100px;
   display: flex;
 }
 
 .mob-soc__item:not(:last-child) {
   margin-bottom: 24px;
+  margin-right: 20px;
 }
 .mob-soc__link {
   font-weight: 600;
@@ -166,5 +200,5 @@
 
   letter-spacing: 0.2em;
 
-  color: #303030;
+  color: #2196f3;
 }

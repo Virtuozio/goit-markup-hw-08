@@ -40,4 +40,8 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
+  @include desktop {
+    width: 696px;
+    font-size: 44px;
+  }
 }
