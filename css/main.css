@@ -1007,13 +1007,9 @@ body {
   margin-left: 0;
 }
 
-.email-label {
-  width: 100%;
-}
-
 .email-input {
   height: 50px;
-  width: 100%;
+  width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--second-background-color);
