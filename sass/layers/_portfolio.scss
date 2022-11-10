@@ -5,6 +5,13 @@
 }
 .portfolio-item {
   background: #ffffff;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 2) / 3);
+  }
 }
 .portfolio-link {
   color: inherit;

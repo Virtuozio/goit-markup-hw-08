@@ -30,6 +30,9 @@
   color: var(--main-color);
   display: block;
   margin-bottom: 20px;
+  @include desktop {
+    font-size: 26px;
+  }
 }
 
 .footer-address {
