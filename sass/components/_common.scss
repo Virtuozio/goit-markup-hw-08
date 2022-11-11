@@ -20,11 +20,11 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   @include mobile {
-    width: 448px;
+    width: 480px;
   }
 
   @include tablet {
-    width: 738px;
+    width: 768px;
   }
   @include desktop {
     width: 1200px;

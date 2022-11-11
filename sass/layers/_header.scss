@@ -1,6 +1,8 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 10px 0;
+  @include tablet {
+    padding: 24px 0;
+  }
 }
 .header__container {
   display: flex;
@@ -87,6 +89,10 @@
 }
 .menu-open-btn {
   margin-left: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include tablet {
     display: none;
   }
@@ -96,8 +102,8 @@
   position: fixed;
   top: 0;
   background-color: #ffffff;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -125,6 +131,9 @@
   background-color: transparent;
   border: none;
   display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -138,10 +147,10 @@
   margin-bottom: 64px;
 }
 .mob-menu__link {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
 
   color: #303030;
 }
@@ -189,10 +198,11 @@
 .mob-soc {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .mob-soc__item:not(:last-child) {
-  margin-bottom: 24px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;

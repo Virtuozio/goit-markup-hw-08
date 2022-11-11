@@ -36,12 +36,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-color);
-  width: 360px;
+  max-width: 360px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
   @include desktop {
     width: 696px;
     font-size: 44px;
+    max-width: none;
   }
 }

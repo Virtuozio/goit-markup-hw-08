@@ -45,13 +45,11 @@
 
 .buttons-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 8px;
   margin-bottom: 50px;
-}
-.menu-open-btn {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include tablet {
+    justify-content: center;
+  }
 }
