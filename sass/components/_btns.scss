@@ -48,6 +48,7 @@
   flex-wrap: wrap;
   justify-content: left;
   gap: 8px;
+  row-gap: 15px;
   margin-bottom: 50px;
   @include tablet {
     justify-content: center;
